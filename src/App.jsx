@@ -12,10 +12,10 @@ import { banner_mens, banner_womens, banner_kids } from "./assets";
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/Shopper">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="" element={<Home />} />
           <Route
             path="/mens"
             element={<ShopCategory banner={banner_mens} category={"men"} />}
