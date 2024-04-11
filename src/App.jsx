@@ -12,7 +12,7 @@ import { banner_mens, banner_womens, banner_kids } from "./assets";
 const App = () => {
   return (
     <div>
-      <BrowserRouter basename="/Shopper">
+      <BrowserRouter basename="/Shopper/">
         <Navbar />
         <Routes>
           <Route path="" element={<Home />} />
