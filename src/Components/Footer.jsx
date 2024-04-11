@@ -11,8 +11,8 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer h-auto bg-[rgb(28,28,28)] pt-10">
-      <div className="upper-div flex flex-row">
+    <div className="footer h-auto bg-[rgb(28,28,28)] pt-10 px-5">
+      <div className="upper-div flex flex-col lg:flex-row">
         <div className="footer-left w-[50%] flex flex-col justify-start items-start gap-[20px]">
           <div className="flex justify-center items-center gap-5 px-10">
             <img className="w-[70px]" src={logo_big} alt="" />
@@ -29,7 +29,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="footer-right w-[50%] flex flex-row gap-[90px]">
+        <div className="footer-right w-[50%] flex flex-col lg:flex-row gap-[90px]">
           <div className="quick_links">
             <h1 className="text-white text-[25px] pt-5 pb-8 text-nowrap">
               Quick Links
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-full h-1" />
-      <div className="lower-div flex flex-row w-full justify-between items-start py-8 px-8">
+      <div className="lower-div flex flex-col lg:flex-row w-full justify-between items-start py-8 px-8">
         <div className="footer-copyright w-[60%] flex flex-row gap-[30px] mb-6 text-[16px]">
           <p className="text-[#A8AFB4]">
             Copyright © 2024 | SHOPPER - All rights reserved
