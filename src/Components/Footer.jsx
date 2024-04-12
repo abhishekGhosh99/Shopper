@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="w-full h-1" />
-      <div className="lower-div flex flex-col lg:flex-row w-full justify-between items-start py-8 px-8">
+      <div className="lower-div flex flex-col lg:flex-row w-full justify-between items-start py-8 px-5 lg:px-8">
         <div className="footer-copyright w-full lg:w-[60%] flex flex-row gap-[30px] mb-6 text-[16px]">
           <p className="text-[#A8AFB4]">
             Copyright © 2024 | SHOPPER - All rights reserved
