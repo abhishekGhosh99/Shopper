@@ -3,8 +3,8 @@ import { arrow, hero_image, hero_image2 } from "../assets";
 
 const Hero = () => {
   return (
-    <div className="hero relative flex flex-col lg:flex-row h-[110vh] bg-gradient-to-b from-[#ddd6f3] to-[#faaca8] p-8">
-      <div className="hero-left w-full lg:w-2/4 lg:flex-1 flex flex-col justify-start lg:justify-center items-start lg:items-center gap-[30px] leading-[1]">
+    <div className="hero relative flex flex-row bg-gradient-to-b from-[#ddd6f3] to-[#faaca8] py-20 px-8">
+      <div className="hero-left w-2/4 lg:flex-1 flex flex-col justify-center items-start lg:items-center gap-[30px] leading-[1] z-10">
         <div className="w-full lg:w-2/4 new_arrivals flex justify-start lg:justify-start text-start items-start lg:items-start">
           <h2 className="uppercase text-[#090909] text-[20px] text-nowrap lg:text-wrap lg:text-[20px] font-[600]">
             New Arrivals only
@@ -21,9 +21,9 @@ const Hero = () => {
           <img src={arrow} alt="arrow_icon" />
         </div>
       </div>
-      <div className="hero-right absolute lg:relative w-full lg:w-2/4 flex justify-end lg:justify-start items-end lg:items-center pl-0 lg:pl-16 bottom-[-5%]">
+      <div className="hero-right w-2/4 flex justify-end lg:justify-start items-end lg:items-center pl-0 lg:pl-16">
         <img
-          className="w-[500px] lg:w-[78%] mt-[50px] lg:mt-[120px]"
+          className="max-w-[250px] lg:max-w-[100%] lg:w-[78%] mt-[0px] lg:mt-[120px]"
           src={hero_image2}
           alt="image"
         />

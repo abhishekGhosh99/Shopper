@@ -11,17 +11,17 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer h-auto bg-[rgb(28,28,28)] pt-10 px-5">
+    <div className="footer h-auto bg-[rgb(28,28,28)] pt-10 px-10">
       <div className="upper-div flex flex-col lg:flex-row">
-        <div className="footer-left w-[50%] flex flex-col justify-start items-start gap-[20px]">
-          <div className="flex justify-center items-center gap-5 px-10">
-            <img className="w-[70px]" src={logo_big} alt="" />
-            <p className="text-[383838] text-[36px] font-[700] text-white">
+        <div className="footer-left w-full lg:w-[50%] flex flex-col justify-start items-start gap-[20px]">
+          <div className="flex justify-center items-center gap-3 lg:px-10">
+            <img className="w-[50px] lg:w-[70px]" src={logo_big} alt="" />
+            <p className="text-[28px] lg:text-[36px] font-[700] text-white">
               SHOPPER
             </p>
           </div>
-          <div className="flex justify-start gap-5 px-10 py-5">
-            <p className="w-[80%] text-[#A8AFB4]">
+          <div className="flex justify-start gap-5 px-0 lg:px-10 py-5">
+            <p className="w-full lg:w-[80%] text-[#A8AFB4]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eaque
               ipsum at voluptatibus eos? Tempora molestiae delectus libero
               consectetur quidem id nihil. Veniam, error dolores nulla pariatur
@@ -29,7 +29,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="footer-right w-[50%] flex flex-col lg:flex-row gap-[90px]">
+        <div className="footer-right w-full lg:w-[50%] flex flex-col lg:flex-row lg:gap-[90px]">
           <div className="quick_links">
             <h1 className="text-white text-[25px] pt-5 pb-8 text-nowrap">
               Quick Links
@@ -61,7 +61,7 @@ const Footer = () => {
                 aliquam gravida sollicitudin. Praesent porta enim mi, non
                 tincidunt libero interdum sit amet.
               </p>
-              <div className="flex flex-row w-[140px] gap-6 pb-10">
+              <div className="flex flex-wrap lg:flex-row w-[140px] gap-6 pb-10">
                 <img src={play_store} alt="" />
                 <img src={app_store} alt="" />
               </div>
@@ -80,12 +80,12 @@ const Footer = () => {
       </div>
       <hr className="w-full h-1" />
       <div className="lower-div flex flex-col lg:flex-row w-full justify-between items-start py-8 px-8">
-        <div className="footer-copyright w-[60%] flex flex-row gap-[30px] mb-6 text-[16px]">
+        <div className="footer-copyright w-full lg:w-[60%] flex flex-row gap-[30px] mb-6 text-[16px]">
           <p className="text-[#A8AFB4]">
             Copyright © 2024 | SHOPPER - All rights reserved
           </p>
         </div>
-        <div className="social-links flex flex-row w-[40%] gap-5 justify-end items-start px-5 mb-6">
+        <div className="social-links flex flex-row w-full lg:w-[40%] gap-5 justify-center lg:justify-end items-center lg:items-start px-5 mb-6">
           <img className="w-5" src={facebook_icon} alt="facebook_icon" />
           <img className="w-5" src={instagram_icon} alt="instagram_icon" />
           <img className="w-5" src={twitter_icon} alt="twitter_icon" />

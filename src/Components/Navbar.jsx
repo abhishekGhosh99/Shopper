@@ -9,7 +9,7 @@ const Navbar = () => {
   const { getTotalCartItems } = useContext(ShopContext);
 
   return (
-    <nav className="navbar flex justify-between lg:justify-around p-[20px] lg:p-[10px] shadow-lg shadow-black-500/50 overflow-hidden">
+    <nav className="navbar flex justify-between lg:justify-around p-[20px] lg:p-[10px] shadow-lg shadow-black-500/50">
       <div className="nav-logo flex items-center gap-[8px] lg:gap-[10px]">
         <img className="w-[30px] lg:w-[50px]" src={logo} alt="logo" />
         <p className="text-[#171717] text-[17px] lg:text-[24px] font-[600]">

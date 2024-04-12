@@ -9,7 +9,7 @@ const Popular = () => {
         Popular in women
       </h1>
       <hr className="w-[300px] h-[3px] rounded-[10px] bg-[#626262]" />
-      <div className="popular-item mt-[50px] flex flex-col lg:flex-row gap-[30px]">
+      <div className="popular-item mt-[50px] flex flex-wrap justify-center items-center lg:flex-row gap-[30px]">
         {data_product.map((item, index) => (
           <Item
             key={index}

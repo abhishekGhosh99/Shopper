@@ -7,7 +7,7 @@ import Newsletter from "../Components/Newsletter";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <Popular />
       <Offers />

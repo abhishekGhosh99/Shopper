@@ -11,7 +11,7 @@ import { banner_mens, banner_womens, banner_kids } from "./assets";
 
 const App = () => {
   return (
-    <div>
+    <div className="w-full">
       <BrowserRouter basename="/Shopper/">
         <Navbar />
         <Routes>
