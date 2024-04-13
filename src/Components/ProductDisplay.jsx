@@ -6,26 +6,26 @@ const ProductDisplay = (props) => {
   const { product } = props;
   const { addToCart } = useContext(ShopContext);
   return (
-    <div className="productdisplay flex my-[50px] mx-[100px] gap-10">
+    <div className="productdisplay flex flex-col justify-center items-center lg:flex-row my-[50px] mx-[20px] lg:mx-[100px] gap-10">
       <div className="productdisplay-left flex gap-4">
         <div className="productdisplay-img-list flex flex-col gap-4">
           <img
-            className="h-[80px] w-[70px] rounded-lg"
+            className="h-auto lg:h-[80px] w-[70px] rounded-lg"
             src={product.image}
             alt=""
           />
           <img
-            className="h-[80px] w-[70px] rounded-lg"
+            className="h-auto lg:h-[80px] w-[70px] rounded-lg"
             src={product.image}
             alt=""
           />
           <img
-            className="h-[80px] w-[70px] rounded-lg"
+            className="h-auto lg:h-[80px] w-[70px] rounded-lg"
             src={product.image}
             alt=""
           />
           <img
-            className="h-[80px] w-[70px] rounded-lg"
+            className="h-auto lg:h-[80px] w-[70px] rounded-lg"
             src={product.image}
             alt=""
           />
@@ -66,7 +66,7 @@ const ProductDisplay = (props) => {
           <h1 className="mt-[13px] text-[#656565] text-[17px] font-[600]">
             Select Size
           </h1>
-          <div className="productdisplay-right-sizes flex my-[14px] mx-0 gap-4">
+          <div className="productdisplay-right-sizes flex flex-wrap lg:flex-nowrap my-[14px] mx-0 gap-4">
             <div className="py-[13px] px-[20px] bg-[#fbfbfb] border-[3px] border-[#ebebeb] rounded-[3px] cursor-pointer">
               S
             </div>
@@ -88,7 +88,7 @@ const ProductDisplay = (props) => {
           onClick={() => {
             addToCart(product.id);
           }}
-          className="py-[10px] w-[160px] text-[15px] font-[600] text-white bg-[#ff4141] my-[10px] border-none outline-none cursor-pointer rounded-lg"
+          className="py-[10px] w-[160px] text-[15px] font-[600] text-white bg-[#ff4141] my-[30px] lg:my-[10px] border-none outline-none cursor-pointer rounded-lg"
         >
           ADD TO CART
         </button>
