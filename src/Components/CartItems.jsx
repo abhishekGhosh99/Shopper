@@ -7,7 +7,7 @@ const CartItems = () => {
   const { all_product, cartItems, removeFromCart, getTotalCartAmount } =
     useContext(ShopContext);
   return (
-    <div className="cartitems my-[40px] mx-[30px] lg:mx-[60px]">
+    <div className="cartitems my-[40px] mx-[30px] lg:mx-[60px] py-20">
       <div className="flex flex-col items-center mb-10">
         <h1 className="flex justify-center text-[36px] font-[600] mb-2">
           Cart

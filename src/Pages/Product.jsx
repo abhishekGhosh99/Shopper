@@ -11,7 +11,7 @@ const Product = () => {
   const { productId } = useParams();
   const product = all_product.find((e) => e.id === Number(productId));
   return (
-    <div>
+    <div className="w-full h-full py-20">
       <Breadcrum product={product} />
       <ProductDisplay product={product} />
       <ProductDescription />
